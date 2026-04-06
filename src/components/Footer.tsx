@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
     },
     {
       icon: ExternalLink,
-      href: "https://fiverr.com",
+      href: "https://www.fiverr.com/s/42V7QXx",
       label: "Fiverr",
       color: "hover:text-purple-400",
     },

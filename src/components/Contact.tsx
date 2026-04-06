@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
   const platforms = [
     {
       name: 'Fiverr',
-      url: 'https://fiverr.com',
+      url: 'https://www.fiverr.com/s/42V7QXx',
       color: 'from-green-400 to-green-600',
       hoverColor: 'hover:shadow-green-400/20'
     },
