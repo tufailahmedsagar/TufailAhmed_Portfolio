@@ -1,13 +1,33 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 
 const Footer: React.FC = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub', color: 'hover:text-gray-400' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/tufail-ahmed-928b29257', label: 'LinkedIn', color: 'hover:text-blue-400' },
-    { icon: Mail, href: 'mailto:tufail.ahmed@email.com', label: 'Email', color: 'hover:text-green-400' },
-    { icon: ExternalLink, href: 'https://fiverr.com', label: 'Fiverr', color: 'hover:text-purple-400' }
+    {
+      icon: Github,
+      href: "https://github.com/tufailahmedsagar/tufailahmedsagar",
+      label: "GitHub",
+      color: "hover:text-gray-400",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/tufail-ahmed-928b29257",
+      label: "LinkedIn",
+      color: "hover:text-blue-400",
+    },
+    {
+      icon: Mail,
+      href: "mailto:tufailahmedsagar951@gmail.com",
+      label: "Email",
+      color: "hover:text-green-400",
+    },
+    {
+      icon: ExternalLink,
+      href: "https://fiverr.com",
+      label: "Fiverr",
+      color: "hover:text-purple-400",
+    },
   ];
 
   return (
@@ -18,7 +38,9 @@ const Footer: React.FC = () => {
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Tufail Ahmed
             </h3>
-            <p className="text-gray-400 mt-2">MERN Stack Developer | React.js & Node.js</p>
+            <p className="text-gray-400 mt-2">
+              MERN Stack Developer | React.js & Node.js
+            </p>
           </div>
 
           <div className="flex space-x-6">
@@ -29,9 +51,9 @@ const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`text-gray-500 ${link.color} transition-all duration-300 transform hover:scale-110`}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.2,
-                  filter: 'drop-shadow(0 0 10px currentColor)'
+                  filter: "drop-shadow(0 0 10px currentColor)",
                 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -44,7 +66,8 @@ const Footer: React.FC = () => {
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-500">
-            © 2025 Tufail Ahmed. All rights reserved. Built with React & Tailwind CSS.
+            © 2025 Tufail Ahmed. All rights reserved. Built with React &
+            Tailwind CSS.
           </p>
         </div>
       </div>

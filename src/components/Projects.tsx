@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Project } from "../types";
 import { staggerContainer, fadeInUp } from "../utils/animations";
 
@@ -13,24 +13,14 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
-      id: 1,
-      title: "Divine Quran Center",
-      description:
-        "Professional Next.js website for a Quran learning center with mobile-first responsive layout, fast-loading pages, and SEO optimization.",
-      image: "/DivineQuranCenter.png",
-      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
-      liveUrl: "https://www.divinequrancenter.com/",
-      githubUrl: "#",
-    },
-    {
       id: 2,
       title: "Islamic Baby Name Finder Tool",
       description:
         "Next.js web application with MongoDB database for searching and discovering Islamic baby names with responsive design and easy navigation.",
       image: "/hafizsagar-tech.png",
       technologies: ["Next.js", "MongoDB", "React", "Tailwind CSS"],
-      liveUrl: "#", // Add live link if available
-      githubUrl: "#", // Add GitHub link if available
+      liveUrl: "https://www.findislamicnames.com/", // Add live link if available
+      githubUrl: "#",
     },
 
     {
@@ -41,6 +31,16 @@ const Projects: React.FC = () => {
       image: "/Hafiz-Sagar-Tech.png",
       technologies: ["React", "Node.js", "Express", "MySQL"],
       liveUrl: "https://www.tophostels.pk/",
+      githubUrl: "#",
+    },
+    {
+      id: 1,
+      title: "Divine Quran Center",
+      description:
+        "Professional Next.js website for a Quran learning center with mobile-first responsive layout, fast-loading pages, and SEO optimization.",
+      image: "/DivineQuranCenter.png",
+      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
+      liveUrl: "https://divine-quran-center.vercel.app/",
       githubUrl: "#",
     },
     {
@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
     <section
       id="projects"
       ref={ref}
-      className="py-20 px-4 bg-gradient-to-b from-black to-gray-900 relative"
+      className="py-20 px-10 bg-gradient-to-b from-black to-gray-900 relative"
     >
       <div className="max-w-7xl mx-auto">
         <motion.h2
@@ -117,18 +117,19 @@ const Projects: React.FC = () => {
                 <div className="flex space-x-4">
                   <a
                     href={project.liveUrl}
+                    target="_blank"
                     className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors duration-300"
                   >
                     <ExternalLink size={16} />
                     <span className="text-sm">Live Demo</span>
                   </a>
-                  <a
+                  {/* <a
                     href={project.githubUrl}
                     className="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors duration-300"
                   >
                     <Github size={16} />
                     <span className="text-sm">Code</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </motion.div>

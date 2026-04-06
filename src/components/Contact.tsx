@@ -53,13 +53,13 @@ const Contact: React.FC = () => {
     },
     {
       name: 'Upwork',
-      url: 'https://upwork.com',
+      url: 'https://www.upwork.com/freelancers/~01eb312afecc0d9e88?mp_source=share',
       color: 'from-green-500 to-blue-500',
       hoverColor: 'hover:shadow-blue-400/20'
     },
     {
       name: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/tufailahmedsagar/tufailahmedsagar',
       color: 'from-gray-600 to-gray-800',
       hoverColor: 'hover:shadow-gray-400/20'
     },
@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Email</h3>
-                  <p className="text-gray-400">tufailahmedsagar1039@gmail.com</p>
+                  <p className="text-gray-400">tufailahmedsagar951@gmail.com</p>
                 </div>
               </div>
               
